@@ -1,4 +1,4 @@
-package com.springboot.crud.SpringBootCrud.config;
+package com.springboot.crud.springbootcrud.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

@@ -1,6 +1,6 @@
-package com.springboot.crud.SpringBootCrud.controllers;
+package com.springboot.crud.springbootcrud.controllers;
 
-import com.springboot.crud.SpringBootCrud.model.User;
+import com.springboot.crud.springbootcrud.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.core.userdetails.UserDetailsService;

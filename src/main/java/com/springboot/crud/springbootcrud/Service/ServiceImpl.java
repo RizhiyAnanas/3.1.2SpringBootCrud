@@ -1,17 +1,14 @@
-package com.springboot.crud.SpringBootCrud.Service;
+package com.springboot.crud.springbootcrud.Service;
 
 
 
 
-import com.springboot.crud.SpringBootCrud.model.Role;
-import com.springboot.crud.SpringBootCrud.model.User;
-import com.springboot.crud.SpringBootCrud.repositories.UserRepository;
+import com.springboot.crud.springbootcrud.model.User;
+import com.springboot.crud.springbootcrud.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @org.springframework.stereotype.Service
 @Transactional

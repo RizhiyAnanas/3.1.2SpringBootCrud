@@ -1,8 +1,7 @@
-package com.springboot.crud.SpringBootCrud.Service;
+package com.springboot.crud.springbootcrud.Service;
 
-import com.springboot.crud.SpringBootCrud.model.Role;
-import com.springboot.crud.SpringBootCrud.repositories.RoleRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.springboot.crud.springbootcrud.model.Role;
+import com.springboot.crud.springbootcrud.repositories.RoleRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

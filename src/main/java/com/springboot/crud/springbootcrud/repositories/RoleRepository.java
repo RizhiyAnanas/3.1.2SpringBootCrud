@@ -1,6 +1,6 @@
-package com.springboot.crud.SpringBootCrud.repositories;
+package com.springboot.crud.springbootcrud.repositories;
 
-import com.springboot.crud.SpringBootCrud.model.Role;
+import com.springboot.crud.springbootcrud.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

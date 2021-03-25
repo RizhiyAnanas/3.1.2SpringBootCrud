@@ -1,4 +1,4 @@
-package com.springboot.crud.SpringBootCrud.model;
+package com.springboot.crud.springbootcrud.model;
 
 import lombok.Data;
 import org.springframework.security.core.GrantedAuthority;

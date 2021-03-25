@@ -1,6 +1,6 @@
-package com.springboot.crud.SpringBootCrud.repositories;
+package com.springboot.crud.springbootcrud.repositories;
 
-import com.springboot.crud.SpringBootCrud.model.User;
+import com.springboot.crud.springbootcrud.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
