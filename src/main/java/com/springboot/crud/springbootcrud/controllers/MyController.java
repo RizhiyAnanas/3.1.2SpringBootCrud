@@ -64,6 +64,7 @@ public class MyController {
         model.addAttribute("thisUser", user);
         List<User> list = service.getList();
         model.addAttribute("users", list);
+        model.addAttribute("allRoles", roleService.getAllRoles());
         return "users";
     }
 
@@ -78,8 +79,15 @@ public class MyController {
         service.deleteUser(id);
         return "redirect:/admin";
     }
-    @PatchMapping("/{id}")
-    public String update(@ModelAttribute("user") User user,@PathVariable("id") Long id ){
+    @PostMapping("/{id}")
+    public String update(@ModelAttribute("user") User user,@PathVariable("id") Long id, @RequestParam("role") String role ){
+        Set<Role> roles = new HashSet<>();
+        if (role.equals("ROLE_ADMIN")){
+            roles.add(roleService.getAllRoles().get(0));
+        }else{
+            roles.add(roleService.getAllRoles().get(1));
+        }
+        user.setRoles(roles);
         service.update(user, id);
         return "redirect:/admin";
     }

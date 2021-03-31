@@ -33,33 +33,33 @@
     <form th:method="POST" th:action="@{/admin}" th:object="${user}">
         <div class="form-group" style="padding-left: 300px; margin-bottom: 0">
         <label for="name">Enter name</label><br/>
-        <input type="text" th:field="*{name}" id="name"/>
+        <input style="width: 250px" type="text" th:field="*{name}" id="name"/>
         </div>
         <div class="form-group" style="padding-left: 300px; margin-bottom: 0">
         <label for="surname">Enter surname</label><br/>
-        <input type="text" th:field="*{surname}" id="surname"/>
+        <input style="width: 250px" type="text" th:field="*{surname}" id="surname"/>
         </div>
         <div class="form-group" style="padding-left: 300px; margin-bottom: 0">
         <label for="email">Enter email</label><br/>
-        <input type="text" th:field="*{email}" id="email"/>
+        <input  style="width: 250px" type="text" th:field="*{email}" id="email"/>
         </div>
         <div class="form-group" style="padding-left: 300px; margin-bottom: 0">
-        <label for="age">Enter age</label><br/>
-        <input type="number" th:field="*{age}" id="age"/>
+        <label  for="age">Enter age</label><br/>
+        <input style="width: 250px" type="number" th:field="*{age}" id="age"/>
         </div>
         <div class="form-group" style="padding-left: 300px; margin-bottom: 0">
         <label for="password">Enter password</label><br/>
-        <input type="text" th:field="*{password}" id="password"/>
+        <input style="width: 250px" type="text" th:field="*{password}" id="password"/>
         </div>
         <div class="form-group" style="padding-left: 300px; margin-bottom: 0">
         <label for ="exampleFormControlSelect2">Chose role</label><br/>
-        <select th:name="role" style="width: 22.5%; height: 60px" multiple class="form-control" id="exampleFormControlSelect2">
+        <select th:name="role" style="width: 250px; height: 60px" multiple class="form-control" id="exampleFormControlSelect2">
             <option th:each="role : ${allRoles}" th:value="${role.getRole()}" th:text="${role.getRole()}"></option>
         </select>
         </div>
         <br/>
         <div class="form-group" style="padding-left: 300px; margin-bottom: 0">
-        <input type="submit" style="background-color: blue" class="btn btn-primary"  value="create"/>
+        <input type="submit" style="background-color: green; width: 250px" class="btn btn-primary"  value="Add new User"/>
         </div>
     </form>
 </div>

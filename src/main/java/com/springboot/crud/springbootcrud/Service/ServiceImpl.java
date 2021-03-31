@@ -48,6 +48,7 @@ public class ServiceImpl implements Service {
         updateUser.setEmail(user.getEmail());
         updateUser.setName(user.getName());
         updateUser.setSurname(user.getSurname());
+        updateUser.setRoles(user.getRoles());
         userRepository.saveAndFlush(updateUser);
     }
 }
