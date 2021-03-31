@@ -1,4 +1,4 @@
-package com.springboot.crud.springbootcrud.Service;
+package com.springboot.crud.springbootcrud.service;
 
 import com.springboot.crud.springbootcrud.model.User;
 import org.springframework.transaction.annotation.Transactional;

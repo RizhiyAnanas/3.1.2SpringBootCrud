@@ -1,8 +1,8 @@
 package com.springboot.crud.springbootcrud.controllers;
 
-import com.springboot.crud.springbootcrud.Service.RoleService;
-import com.springboot.crud.springbootcrud.Service.Service;
-import com.springboot.crud.springbootcrud.Service.UserService;
+import com.springboot.crud.springbootcrud.service.RoleService;
+import com.springboot.crud.springbootcrud.service.Service;
+import com.springboot.crud.springbootcrud.service.UserService;
 import com.springboot.crud.springbootcrud.model.Role;
 import com.springboot.crud.springbootcrud.model.User;
 import org.springframework.stereotype.Controller;
