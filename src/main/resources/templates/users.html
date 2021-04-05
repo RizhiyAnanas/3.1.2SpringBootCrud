@@ -63,7 +63,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <form th:method="POST" th:id="@{'editForm' + ${user.getId()}}" th:action="@{/admin/{id}(id=${user.getId()})}">
+                            <form th:method="PUT" th:id="@{'editForm' + ${user.getId()}}" th:action="@{/admin/{id}(id=${user.getId()})}">
                                 <div class="form-group text-center">
                                     <label for="user-id" class="col-form-label">ID:</label>
                                     <input type="text" class="form-control" id="user-id" name="id" th:value="${user.getId()}" readonly>
