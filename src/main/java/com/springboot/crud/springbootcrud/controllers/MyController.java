@@ -71,13 +71,13 @@ public class MyController {
     }
     @PutMapping("/{id}")
     public String update(@ModelAttribute("user") User user,@PathVariable("id") Long id, @RequestParam(name = "role", required = false) String[] role ){
-        if (role != null){
+        if (role != null) {
             Set<Role> roles = new HashSet<>();
-            for(String r: role){
+            for(String r: role) {
                 roles.add(roleService.getRoleByName(r));
             }
             user.setRoles(roles);
-        }else{
+        } else {
             user.setRoles(service.show(id).getRoles());
         }
         service.update(user, id);
