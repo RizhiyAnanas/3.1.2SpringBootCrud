@@ -41,12 +41,13 @@ public class MyController {
 
     @PostMapping()
     public String create(@ModelAttribute("user") User user, @RequestParam("role") String[] role){
-        if (role != null){
-        Set<Role> roles = new HashSet<>();
-        for(String r: role){
-        roles.add(roleService.getRoleByName(r));
+        if (role != null) {
+            Set<Role> roles = new HashSet<>();
+            for(String r: role) {
+                roles.add(roleService.getRoleByName(r));
+            }
+            user.setRoles(roles);
         }
-        user.setRoles(roles);}
         service.add(user);
         return "redirect:/admin";
     }
@@ -72,12 +73,13 @@ public class MyController {
     public String update(@ModelAttribute("user") User user,@PathVariable("id") Long id, @RequestParam(name = "role", required = false) String[] role ){
         if (role != null){
             Set<Role> roles = new HashSet<>();
-        for(String r: role){
-            roles.add(roleService.getRoleByName(r));
+            for(String r: role){
+                roles.add(roleService.getRoleByName(r));
+            }
+            user.setRoles(roles);
+        }else{
+            user.setRoles(service.show(id).getRoles());
         }
-        user.setRoles(roles);
-        }else{user.setRoles(service.show(id).getRoles());}
-
         service.update(user, id);
         return "redirect:/admin";
     }
